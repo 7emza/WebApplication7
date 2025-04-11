@@ -13,6 +13,9 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Add this line:
+app.UsePathBase("/dotnet");
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
